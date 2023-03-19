@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+#snake-field{
+    display: inline-block;
+}
+#snake-renew,#snake-start{
+    width: 150px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(0, 9, 128);
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+}
+.game-table{
+    border-collapse: collapse;
+    background-color: #8f8c8c;
+}
+td.game-table-cell{
+    width: 15px;
+    height: 15px;
+    border: 1px dotted #eee;
+}
+.snake-unit::after{
+    font-size: small;
+    content: "\1F7E2";
+}
+.food-unit::after{
+    font-size: small;
+    content: "\1F34E";
+}
+
+.bomb-unit::after{
+    font-size: small;
+    content: "\1F4A3";
+}
+
+.buttons{
+    display: inline-block;
+}
+.wrap{
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed; /* Фиксированная ширина ячеек */
+    width: 100%; /* Ширина таблицы */
+    height: 100%;
+}
